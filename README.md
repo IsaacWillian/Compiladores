@@ -2,6 +2,10 @@
 # Compiladores
 Repositório criado para realizar as entregas do trabalho da disciplina de compiladores do curso de Ciência da Computação da UFSCar
 
+#### Isaac Willian Mariotto Marques
+### RA: 754755
+
+
 ## Instalações necessárias
  Primeiramente, as seguintes instalações devem ser feitas: 
 
