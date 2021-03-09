@@ -109,30 +109,4 @@
 <'2',NUM_INT>
 <')',')'>
 <')',')'>
-<'se','se'>
-<'distancia1',IDENT>
-<'<','<'>
-<'distancia2',IDENT>
-<'entao','entao'>
-<'escreva','escreva'>
-<'(','('>
-<'"O primeiro ponto eh o mais proximo"',CADEIA>
-<')',')'>
-<'senao','senao'>
-<'se','se'>
-<'distancia2',IDENT>
-<'<','<'>
-<'distancia1',IDENT>
-<'entao','entao'>
-<'escreva','escreva'>
-<'(','('>
-<'"O segundo ponto eh o mais proximo"',CADEIA>
-<')',')'>
-<'senao','senao'>
-<'escreva','escreva'>
-<'(','('>
-<'"Os pontos equidistam da origem"',CADEIA>
-<')',')'>
-<'fim_se','fim_se'>
-<'fim_se','fim_se'>
-<'fim_algoritmo','fim_algoritmo'>
+Linha 20: comentario nao fechado

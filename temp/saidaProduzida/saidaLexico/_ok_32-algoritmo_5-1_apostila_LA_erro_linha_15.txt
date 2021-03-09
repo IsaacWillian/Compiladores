@@ -29,17 +29,4 @@
 <'se','se'>
 <'media',IDENT>
 <'>','>'>
-<'=','='>
-<'6',NUM_INT>
-<'entao','entao'>
-<'escreva','escreva'>
-<'(','('>
-<'"Aprovado :)..."',CADEIA>
-<')',')'>
-<'senao','senao'>
-<'escreva','escreva'>
-<'(','('>
-<'"Reprovado :(..."',CADEIA>
-<')',')'>
-<'fim_se','fim_se'>
-<'fim_algoritmo','fim_algoritmo'>
+Linha 15: $ - simbolo nao identificado

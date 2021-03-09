@@ -5,6 +5,7 @@ lexer grammar laLexer;
 WS  :   ( ' '| '\t'| '\r'| '\n') -> skip;
    
 
+ERRO_COMENTARIO: '{' (~('\n'))*?;
 //Ignora comentários
 COMENTARIO : '{' ( ~('\n') )*? '}' -> skip;
 
@@ -28,7 +29,13 @@ OP: ( '+' | '-' | '*' | '/' | '<-' | '<' |'=' |'<=' | '..'| '>' |'<>' | '%' | '^
 
 IDENT : ('a'..'z'|'A'..'Z')  ('a'..'z'|'A'..'Z'|'0'..'9'| '_')* ;
 
+ERRO_CADEIA: '"' ( ~('\n') )*? ;
+
 CADEIA 	: '"' ( ~('\n') )*? '"';
+
+ERRO: ~('\n');
+
+
 
 
 

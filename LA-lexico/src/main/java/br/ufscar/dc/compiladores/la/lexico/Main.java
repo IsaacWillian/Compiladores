@@ -25,18 +25,32 @@ public class Main {
             
             // args[0] é o primeiro argumento da linha de comando
             CharStream cs = CharStreams.fromFileName(args[0]);
-            
+            int erro = 0;
             laLexer lex = new laLexer(cs);
             Token t = null;
             
             // enquanto os tokens não chegam ao fim
-            while ((t = lex.nextToken()).getType() != Token.EOF) {
+            while (((t = lex.nextToken()).getType() != Token.EOF) && erro != 1 ) {
                 if (laLexer.VOCABULARY.getDisplayName(t.getType()) == "CHAVE" | laLexer.VOCABULARY.getDisplayName(t.getType()) == "OP" ) {
                     //imprime palavras-chaves
                     output.println("<'"+t.getText() + "','" + t.getText() +"'>");
-                }else{
-                    //imprime texto e o TIPO
-                    output.println("<'"+t.getText() + "'," + laLexer.VOCABULARY.getDisplayName(t.getType())+">");
+                }// caso algum simbolo nao tenha sido identificado 
+                else if(laLexer.VOCABULARY.getDisplayName(t.getType()) == "ERRO"){
+                        output.println("Linha "+t.getLine()+": "+ t.getText()+" - simbolo nao identificado");
+                        erro = 1;
+                        
+                }// caso comentario nao tenha sido fechado
+                else if(laLexer.VOCABULARY.getDisplayName(t.getType()) == "ERRO_COMENTARIO"){
+                    output.println("Linha "+t.getLine()+":" + " comentario nao fechado");
+                    erro = 1;
+                    
+                }// caso a cadeia literal nao tenha sido fechada
+                else if(laLexer.VOCABULARY.getDisplayName(t.getType()) == "ERRO_CADEIA"){
+                    output.println("Linha "+t.getLine()+":" + " cadeia literal nao fechada");
+                    erro = 1;
+                    
+                }//imprime texto e o TIPO
+                else{output.println("<'"+t.getText() + "'," + laLexer.VOCABULARY.getDisplayName(t.getType())+">");
                     
                 }
                 

@@ -63,32 +63,4 @@
 <'.','.'>
 <'nome',IDENT>
 <'=','='>
-<'se','se'>
-<'vinhoCaro',IDENT>
-<'.','.'>
-<'preco',IDENT>
-<'=','='>
-<'-','-'>
-<'1',NUM_INT>
-<'entao','entao'>
-<'escreva','escreva'>
-<'(','('>
-<'"Nenhum vinho foi apresentado."',CADEIA>
-<')',')'>
-<'senao','senao'>
-<'escreva','escreva'>
-<'(','('>
-<'vinhoCaro',IDENT>
-<'.','.'>
-<'nome',IDENT>
-<',',','>
-<'vinhoCaro',IDENT>
-<'.','.'>
-<'preco',IDENT>
-<',',','>
-<'vinhocaro',IDENT>
-<'.','.'>
-<'tipoVinho',IDENT>
-<')',')'>
-<'fim_se','fim_se'>
-<'fim_algoritmo','fim_algoritmo'>
+Linha 22: cadeia literal nao fechada

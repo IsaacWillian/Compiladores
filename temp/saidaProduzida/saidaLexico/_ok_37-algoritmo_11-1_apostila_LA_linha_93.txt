@@ -359,6 +359,4 @@
 <'escrevaVinho',IDENT>
 <'(','('>
 <'vinho',IDENT>
-<'fim_se','fim_se'>
-<'fim_para','fim_para'>
-<'fim_algoritmo','fim_algoritmo'>
+Linha 93: comentario nao fechado
