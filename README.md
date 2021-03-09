@@ -14,12 +14,21 @@ Repositório criado para realizar as entregas do trabalho da disciplina de compi
  
  2.Apache Maven 3.6.3
 
+3.Apache Netbeans IDE
+
 ## Para compilar
-Clone este repositório em sua maquina e execute o seguinte comando:
+Clone este repositório em sua maquina e importe o projeto no Apache NetBeans IDE.
 
-Após esse comando o arquivo .jar gerado pode ser executado com o seguinte comando
+Aperte o botão Build Project (ou o atalho F11) para criar o .jar do projeto.
 
-##
+Após esse comando o arquivo .jar  pode ser executado com o seguinte comando:
+` java -jar LOCAL_DO_REPOSITORIO/target/LA-lexico-1.0-SNAPSHOT-jar-with-dependencies.jar LOCAL_DO_REPOSITORIO/teste.txt LOCAL_DO_REPOSITORIO/temp/saida.txt`
+
+Após a execução desse comando a saída pode ser encontrar em LOCAL_DO_REPOSITORIO/temp
+
+LOCAL_DO_REPOSITORIO = Local onde foi feito o clone do repositório remoto.
+
+
 
 
 
