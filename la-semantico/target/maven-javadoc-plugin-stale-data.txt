@@ -1,0 +1,67 @@
+/usr/bin/javadoc
+@options
+@packages
+-classpath
+'/home/isaacwillian/.m2/repository/org/antlr/antlr4/4.7.2/antlr4-4.7.2-complete.jar:/home/isaacwillian/.m2/repository/org/antlr/antlr4-runtime/4.7.2/antlr4-runtime-4.7.2.jar:/home/isaacwillian/.m2/repository/org/antlr/antlr-runtime/3.5.2/antlr-runtime-3.5.2.jar:/home/isaacwillian/.m2/repository/org/antlr/ST4/4.1/ST4-4.1.jar:/home/isaacwillian/.m2/repository/org/abego/treelayout/org.abego.treelayout.core/1.0.3/org.abego.treelayout.core-1.0.3.jar:/home/isaacwillian/.m2/repository/org/glassfish/javax.json/1.0.4/javax.json-1.0.4.jar:/home/isaacwillian/.m2/repository/com/ibm/icu/icu4j/61.1/icu4j-61.1.jar'
+-encoding
+'UTF-8'
+-protected
+-sourcepath
+'/home/isaacwillian/NetBeansProjects/la-semantico/src/main/java:/home/isaacwillian/NetBeansProjects/la-semantico/target/generated-sources/antlr4'
+-author
+-bottom
+'Copyright &#169; 2021. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/home/isaacwillian/NetBeansProjects/la-semantico/target/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'la-semantico 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/en/java/javase/11/docs/api' '/home/isaacwillian/NetBeansProjects/la-semantico/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'la-semantico 1.0-SNAPSHOT API'
+br.ufscar.dc.compiladores.la.semantico
+br.ufscar.dc.compiladores.la.semantico
+br.ufscar.dc.compiladores.la.semantico
+br.ufscar.dc.compiladores.la.semantico
+br.ufscar.dc.compiladores.la.semantico
+br.ufscar.dc.compiladores.la.semantico
+br.ufscar.dc.compiladores.la.semantico
+br.ufscar.dc.compiladores.la.semantico
+br.ufscar.dc.compiladores.la.semantico
+br.ufscar.dc.compiladores.la.semantico
+/home/isaacwillian/.m2/repository/org/antlr/antlr4/4.7.2/antlr4-4.7.2-complete.jar = 1615479225486
+/home/isaacwillian/.m2/repository/org/antlr/antlr4-runtime/4.7.2/antlr4-runtime-4.7.2.jar = 1615222365467
+/home/isaacwillian/.m2/repository/org/antlr/antlr-runtime/3.5.2/antlr-runtime-3.5.2.jar = 1615222365607
+/home/isaacwillian/.m2/repository/org/antlr/ST4/4.1/ST4-4.1.jar = 1615222365851
+/home/isaacwillian/.m2/repository/org/abego/treelayout/org.abego.treelayout.core/1.0.3/org.abego.treelayout.core-1.0.3.jar = 1615222365331
+/home/isaacwillian/.m2/repository/org/glassfish/javax.json/1.0.4/javax.json-1.0.4.jar = 1615222365739
+/home/isaacwillian/.m2/repository/com/ibm/icu/icu4j/61.1/icu4j-61.1.jar = 1615222366659
+/home/isaacwillian/NetBeansProjects/la-semantico/src/main/java = 1617039558101
+/home/isaacwillian/NetBeansProjects/la-semantico/target/generated-sources/antlr4/la.tokens = 1617044777851
+/home/isaacwillian/NetBeansProjects/la-semantico/target/generated-sources/antlr4/laLexer.tokens = 1617044777627
+/home/isaacwillian/NetBeansProjects/la-semantico/target/generated-sources/antlr4 = 1617044777851
+/home/isaacwillian/NetBeansProjects/la-semantico/target/apidocs/stylesheet.css = 1617051755178
+/home/isaacwillian/NetBeansProjects/la-semantico/target/apidocs/package-search-index.zip = 1617051755138
+/home/isaacwillian/NetBeansProjects/la-semantico/target/apidocs/allpackages-index.html = 1617051755162
+/home/isaacwillian/NetBeansProjects/la-semantico/target/apidocs/allclasses.html = 1617051755174
+/home/isaacwillian/NetBeansProjects/la-semantico/target/apidocs/overview-tree.html = 1617051754998
+/home/isaacwillian/NetBeansProjects/la-semantico/target/apidocs/allclasses-index.html = 1617051755162
+/home/isaacwillian/NetBeansProjects/la-semantico/target/apidocs/member-search-index.zip = 1617051755146
+/home/isaacwillian/NetBeansProjects/la-semantico/target/apidocs/script.js = 1617051755178
+/home/isaacwillian/NetBeansProjects/la-semantico/target/apidocs/constant-values.html = 1617051754650
+/home/isaacwillian/NetBeansProjects/la-semantico/target/apidocs/help-doc.html = 1617051755178
+/home/isaacwillian/NetBeansProjects/la-semantico/target/apidocs/package-search-index.js = 1617051755138
+/home/isaacwillian/NetBeansProjects/la-semantico/target/apidocs/type-search-index.js = 1617051755138
+/home/isaacwillian/NetBeansProjects/la-semantico/target/apidocs/member-search-index.js = 1617051755142
+/home/isaacwillian/NetBeansProjects/la-semantico/target/apidocs/index.html = 1617051755174
+/home/isaacwillian/NetBeansProjects/la-semantico/target/apidocs/type-search-index.zip = 1617051755138
+/home/isaacwillian/NetBeansProjects/la-semantico/target/apidocs/search.js = 1617051755182
+/home/isaacwillian/NetBeansProjects/la-semantico/target/apidocs/deprecated-list.html = 1617051755170
+/home/isaacwillian/NetBeansProjects/la-semantico/target/apidocs/element-list = 1617051754594
+/home/isaacwillian/NetBeansProjects/la-semantico/target/apidocs/index-all.html = 1617051755150

@@ -43,7 +43,7 @@ cmdLeia: 'leia' '(' ('^')? identificador (',' ('^')? identificador)* ')' ;
 
 cmdEscreva: 'escreva' '(' expressao (',' expressao)* ')' ;
 
-cmdSe: 'se' expressao 'entao' (cmd)* ('senao' (cmd)*)? 'fim_se' ;
+cmdSe: 'se' expressao 'entao' (en+=cmd)* ('senao' (sen+=cmd)*)? 'fim_se' ;
 
 cmdCaso: 'caso' exp_aritmetica 'seja' selecao ('senao' (cmd)*)? 'fim_caso' ;
 
@@ -53,7 +53,7 @@ cmdEnquanto: 'enquanto' expressao 'faca' (cmd)* 'fim_enquanto' ;
 
 cmdFaca: 'faca' (cmd)* 'ate' expressao ;
 
-cmdAtribuicao: ('^')? identificador '<-' expressao ;
+cmdAtribuicao: (pont='^')? identificador '<-' expressao ;
 
 cmdChamada: IDENT '(' expressao (',' expressao)* ')' ;
 
@@ -83,10 +83,11 @@ op3: '%' ;
 
 parcela: (op_unario)? parcela_unario | parcela_nao_unario ;
 
-parcela_unario: ('^')? identificador | IDENT '(' expressao (',' expressao)* ')' |
+parcela_unario: (pont='^')? identificador |
+                IDENT '(' expressao (',' expressao)* ')' |
                 NUM_INT |
                 NUM_REAL |
-                '(' expressao ')' ;
+                '(' newexp=expressao ')' ;
 
 parcela_nao_unario: '&' identificador | CADEIA ;
 
@@ -98,9 +99,9 @@ expressao: termo_logico (op_logico_1 termo_logico)* ;
 
 termo_logico: fator_logico (op_logico_2 fator_logico)*;
 
-fator_logico: ('nao')? parcela_logica ;
+fator_logico: (not='nao')? parcela_logica ;
 
-parcela_logica: ('verdadeiro' | 'falso' ) | exp_relacional ;
+parcela_logica: logico=('verdadeiro' | 'falso' ) | exp_relacional ;
 
 op_logico_1: 'ou' ;
 
