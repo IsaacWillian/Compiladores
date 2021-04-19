@@ -1,0 +1,20 @@
+// A execução deve gerar um código python
+
+LOAD:
+    GROUP group1:("/content/save2.jpg"),("/content/save1.jpg"),("/content/save3.jpg")
+    GROUP group2:("/content/save2.jpg"),("/content/save1.jpg"),("/content/save3.jpg")
+    ONE image1:("/content/save3.jpg")
+    ONE image2:("/content/save3.jpg")
+
+PROCESS:
+    threshold in group1  above 100 //imagens devem ser binarias
+    threshold in group2  above 150 //imagens devem ser binarias
+    filter mean in image1
+    filter gaussian in image2
+
+SHOW:
+   show in grid group1
+   show in grid group2
+   show image1
+   show image2
+

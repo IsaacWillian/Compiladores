@@ -1,0 +1,73 @@
+import matplotlib.pyplot as plt
+import numpy as np
+import skimage.filters as skifilters
+import skimage.morphology as skimorph
+
+group1=[]
+group1.append(plt.imread("/content/save2.jpg")[:,:,0])
+group1.append(plt.imread("/content/save1.jpg")[:,:,0])
+group1.append(plt.imread("/content/save3.jpg")[:,:,0])
+
+group2=[]
+group2.append(plt.imread("/content/save2.jpg")[:,:,0])
+group2.append(plt.imread("/content/save1.jpg")[:,:,0])
+group2.append(plt.imread("/content/save3.jpg")[:,:,0])
+
+image1 = plt.imread("/content/save3.jpg")[:,:,0]
+
+image2 = plt.imread("/content/save3.jpg")[:,:,0]
+
+group1[0] = group1[0]>100
+group1[1] = group1[1]>100
+group1[2] = group1[2]>100
+
+group2[0] = group2[0]>150
+group2[1] = group2[1]>150
+group2[2] = group2[2]>150
+
+image1 = skifilters.rank.mean(image1,skimorph.square(3))
+
+image2 = skifilters.gaussian(image2,3)
+
+plt.figure(figsize=(30,30))
+plt.subplot(2,3,1)
+plt.imshow(group1[0],"gray")
+plt.axis("off")
+
+plt.subplot(2,3,2)
+plt.imshow(group1[1],"gray")
+plt.axis("off")
+
+plt.subplot(2,3,3)
+plt.imshow(group1[2],"gray")
+plt.axis("off")
+
+plt.show()
+
+plt.figure(figsize=(30,30))
+plt.subplot(2,3,1)
+plt.imshow(group2[0],"gray")
+plt.axis("off")
+
+plt.subplot(2,3,2)
+plt.imshow(group2[1],"gray")
+plt.axis("off")
+
+plt.subplot(2,3,3)
+plt.imshow(group2[2],"gray")
+plt.axis("off")
+
+plt.show()
+
+plt.figure(figsize=(15,15))
+plt.imshow(image1,"gray")
+plt.axis("off")
+
+plt.show()
+
+plt.figure(figsize=(15,15))
+plt.imshow(image2,"gray")
+plt.axis("off")
+
+plt.show()
+

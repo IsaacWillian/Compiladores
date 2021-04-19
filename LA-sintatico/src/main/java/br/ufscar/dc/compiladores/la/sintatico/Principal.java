@@ -12,7 +12,6 @@ import org.antlr.v4.runtime.Token;
 import java.io.PrintWriter;
 
 /**
- *
  * @author isaacwillian
  */
 public class Principal {

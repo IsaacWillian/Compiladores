@@ -1,0 +1,6 @@
+ - 1. Configurar ambiente
+
+2. Desenvolver gramatica basica
+3. analise semantica
+4. geração de codigo
+

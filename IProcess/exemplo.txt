@@ -1,0 +1,24 @@
+LOAD:
+    GROUP group1:
+        ("/content/save2.jpg"),
+        ("/content/save1.jpg"),
+        ("/content/save3.jpg"),
+        ("/content/save3.jpg")
+    ONE image1:
+    	("/content/save.jpg")
+    	
+PROCESS:
+    filter median in group1
+    threshold in group1 above 100
+    morphfilter erosion in group1
+    filter mean in group1
+
+    filter gaussian size 5 in image1
+    morphfilter dilation in image1
+
+
+    
+SHOW:
+   show in grid 2 2  group1 // precisa ser um group
+   show image1
+    

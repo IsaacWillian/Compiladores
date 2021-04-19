@@ -1,0 +1,58 @@
+import matplotlib.pyplot as plt
+import numpy as np
+import skimage.filters as skifilters
+import skimage.morphology as skimorph
+
+group1=[]
+group1.append(plt.imread("/content/save2.jpg")[:,:,0])
+group1.append(plt.imread("/content/save1.jpg")[:,:,0])
+group1.append(plt.imread("/content/save3.jpg")[:,:,0])
+group1.append(plt.imread("/content/save3.jpg")[:,:,0])
+
+image1 = plt.imread("/content/save.jpg")[:,:,0]
+
+group1[0] = skifilters.rank.median(group1[0],square(3))
+group1[1] = skifilters.rank.median(group1[1],square(3))
+group1[2] = skifilters.rank.median(group1[2],square(3))
+group1[3] = skifilters.rank.median(group1[3],square(3))
+
+group1[0] = group1[0]>100
+group1[1] = group1[1]>100
+group1[2] = group1[2]>100
+group1[3] = group1[3]>100
+
+group1[0] = skimorph.erosion(group1[0])
+group1[1] = skimorph.erosion(group1[1])
+group1[2] = skimorph.erosion(group1[2])
+group1[3] = skimorph.erosion(group1[3])
+
+group1[0] = skifilters.rank.mean(group1[0],square(3))
+group1[1] = skifilters.rank.mean(group1[1],square(3))
+group1[2] = skifilters.rank.mean(group1[2],square(3))
+group1[3] = skifilters.rank.mean(group1[3],square(3))
+
+image1 = skifilters.gaussian(image1,5)
+
+image1 = skimorph.dilation(image1,square(3))
+
+plt.figure(figsize=(30,30))
+plt.subplot(2,2,1)
+plt.imshow(group1[0],"gray")
+plt.axis("off")
+
+plt.subplot(2,2,2)
+plt.imshow(group1[1],"gray")
+plt.axis("off")
+
+plt.subplot(2,2,3)
+plt.imshow(group1[2],"gray")
+plt.axis("off")
+
+plt.subplot(2,2,4)
+plt.imshow(group1[3],"gray")
+plt.axis("off")
+
+
+plt.imshow(image1,"gray")
+plt.show()
+
