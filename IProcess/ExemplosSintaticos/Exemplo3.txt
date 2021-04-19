@@ -5,7 +5,7 @@ LOAD:
     ONE image1:("/content/save3.jpg")
 
 PROCESS:
-    threshold  group1  above 100 //imagens devem ser binarias
+    threshold  group1  above 100
     filter mean in image2
 
 

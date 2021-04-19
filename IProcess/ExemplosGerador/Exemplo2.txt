@@ -7,8 +7,8 @@ LOAD:
     ONE image2:("/content/save3.jpg")
 
 PROCESS:
-    threshold in group1  above 100 //imagens devem ser binarias
-    threshold in group2  above 150 //imagens devem ser binarias
+    threshold in group1  above 100
+    threshold in group2  above 150
     filter mean in image1
     filter gaussian in image2
 

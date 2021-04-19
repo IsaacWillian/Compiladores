@@ -61,6 +61,8 @@ SHOW:
 <declaração da exibição>
 ``` 
 Os comandos possíveis na linguagem IProcess serão demonstrados a seguir, porém alguns exemplos podem ser encontrados na pasta **ExemplosGerador**.
+
+**Obs.** Os exemplos foram construidos para a saída ser executada no Google Colab.
 ```
 LOAD: 
 
